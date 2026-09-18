@@ -1,0 +1,7 @@
+business_unit,licensed_users,activated_users,activation_pct
+Insurance,50,30,60.0
+Human Resources,50,35,70.0
+Retail Banking,80,57,71.3
+Capital Markets,60,44,73.3
+Finance,70,55,78.6
+Technology & Operations,110,90,81.8

@@ -1,0 +1,21 @@
+{
+  "primary_metric": "time_to_first_value_days",
+  "secondary_metric": "pct_reaching_value_within_14_days",
+  "webinar": {
+    "n": 151,
+    "mean_ttv_days": 16.38,
+    "median_ttv_days": 15.0,
+    "pct_within_14d": 49.0
+  },
+  "huddle": {
+    "n": 160,
+    "mean_ttv_days": 13.61,
+    "median_ttv_days": 11.5,
+    "pct_within_14d": 64.4
+  },
+  "welch_ttest_ttv": {
+    "t": -2.299,
+    "p": 0.0222
+  },
+  "recommendation": "Default to local-champion huddle at license for lagging BUs"
+}

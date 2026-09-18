@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.local
+data/*.db
+data/*.csv
+outputs/raw/
+outputs/charts/
+*.log
+
+# Demo artifacts for resume / interview (regenerate with run_all.py)
+!outputs/adoption_dashboard.html
+!outputs/enablement_experiment.json
+!outputs/summary.json
