@@ -1,4 +1,4 @@
-"""Single-file Plotly dashboard for interview demo (open in browser)."""
+"""Single-file Plotly dashboard (open adoption_dashboard.html in a browser)."""
 
 from __future__ import annotations
 
@@ -138,7 +138,7 @@ def main() -> None:
   </style>
 </head>
 <body>
-  <p class="note"><strong>Portfolio demo — not RBC data.</strong> Built for AI Business Enablement-style reporting: adoption, usage vs value, shadow IT, enablement A/B.</p>
+  <p class="note"><strong>Synthetic portfolio data.</strong> Enterprise GenAI enablement metrics: adoption, usage vs value, shadow IT proxy, rollout A/B.</p>
   {body}
 </body>
 </html>"""

@@ -97,7 +97,7 @@ Welch t-test on TTV: t = {summary['welch_ttest_ttv']['t']}, p = {summary['welch_
 
 **{summary['recommendation']}.** Webinar scales; huddle buys **activation and faster first value** where BUs are already skeptical (Retail/Insurance interviews). Pair with a one-page “allowed data” card to cut copy-to-external.
 
-Synthetic data (seed 42). Not an RBC experiment.
+Synthetic data (seed 42).
 """
     (DOCS / "enablement-experiment-memo.md").write_text(memo, encoding="utf-8")
     print("Wrote enablement experiment outputs")

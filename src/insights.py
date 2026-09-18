@@ -50,7 +50,7 @@ def write_readout() -> None:
 **To:** AI Business Enablement / Product  
 **From:** Data Analyst (portfolio simulation)  
 **Re:** Usage vs value, rollout gaps, external context  
-**Data:** Synthetic enterprise GenAI assistant — {int(funnel['licensed_users'].sum())} licensed seats. Not RBC production data.
+**Data:** Synthetic enterprise GenAI assistant — {int(funnel['licensed_users'].sum())} licensed seats.
 
 ---
 
@@ -83,7 +83,7 @@ def write_readout() -> None:
 3. **Product:** Draft is a funnel top. Search/summarize create the stories leadership can take to BUs.
 4. **Risk:** Copy-to-external is an enablement + policy problem, not only a model problem.
 
-All figures are **synthetic** (seed=42) so methods can be checked. Do not cite as bank results.
+All figures are **synthetic** (seed=42) so methods can be checked.
 """
     DOCS.mkdir(parents=True, exist_ok=True)
     (DOCS / "weekly-readout.md").write_text(lines, encoding="utf-8")

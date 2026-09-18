@@ -3,7 +3,7 @@
 **To:** AI Business Enablement / Product  
 **From:** Data Analyst (portfolio simulation)  
 **Re:** Usage vs value, rollout gaps, external context  
-**Data:** Synthetic enterprise GenAI assistant — 420 licensed seats. Not RBC production data.
+**Data:** Synthetic enterprise GenAI assistant — 420 licensed seats.
 
 ---
 
@@ -37,4 +37,4 @@
 3. **Product:** Draft is a funnel top. Search/summarize create the stories leadership can take to BUs.
 4. **Risk:** Copy-to-external is an enablement + policy problem, not only a model problem.
 
-All figures are **synthetic** (seed=42) so methods can be checked. Do not cite as bank results.
+All figures are **synthetic** (seed=42) so methods can be checked.

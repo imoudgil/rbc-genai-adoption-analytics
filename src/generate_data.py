@@ -1,6 +1,6 @@
 """Synthetic enterprise GenAI adoption events, interviews, and external trend notes.
 
-Personal portfolio — not RBC data. Seeded so metrics are reproducible.
+Synthetic portfolio data (seed 42).
 """
 
 from __future__ import annotations
@@ -44,7 +44,7 @@ WAVE_START = {
 
 N_USERS = 420
 START = date(2026, 1, 6)
-END = date(2026, 9, 7)  # ~35 weeks of history for a winter-2027 interview story
+END = date(2026, 9, 7)
 
 
 def daterange(start: date, end: date):

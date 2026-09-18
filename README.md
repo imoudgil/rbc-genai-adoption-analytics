@@ -2,42 +2,37 @@
 
 **Personal project — Ishan Moudgil, 2026**
 
-Product-analytics pack for an **AI Business Enablement** intern desk: adoption dashboards, weekly “so what?” readouts, qualitative barriers, and a measurement playbook.
+Product-analytics sample for **enterprise GenAI enablement**: adoption dashboards, weekly “so what?” readouts, qualitative user-research themes, and a measurement playbook.
 
-Built to match work like **RBC Borealis / AI enablement data analyst** (usage vs value, phased rollout, GenAI tools). **All data is synthetic.** Not RBC, not production.
+**All data is synthetic.** Not based on any employer or production system.
 
 ## Why it exists
 
-GenAI programs report **seats and sessions**. That hides three things this desk actually cares about:
+GenAI programs often report **seats and sessions**. This project models three gaps that matter for enablement teams:
 
 1. Licensed ≠ activated (rollout quality).
 2. High-volume features can be toys (**draft** vs **search**).
-3. Consumer ChatGPT/Claude/Gemini set the bar; internal prompt-only products look late.
+3. Consumer ChatGPT/Claude/Gemini set expectations; internal tools need grounded metrics.
 
 Planted, checkable findings (seed 42):
 
-- Lagging **activation** in later waves (Retail / Insurance style BUs).
-- **Draft** has a worse value-event rate than search / code assist.
-- Copy-to-external (shadow IT) is higher where enablement was webinar-only.
-- Public **agent** trend index rises faster than enterprise **prompt** index.
+- Lagging **activation** in later rollout waves.
+- **Draft** with a lower value-event rate than search / code assist.
+- Higher copy-to-external (shadow IT proxy) where enablement was webinar-only.
+- Public **agent** trend index rising faster than enterprise **prompt** index.
 
 ## Stack
 
-Python, pandas, **SQL (SQLite as SQL Server/Postgres stand-in)**, Excel charts (Power BI-style storytelling), matplotlib.
+Python, pandas, **SQL** (SQLite warehouse), Excel, matplotlib, Plotly.
 
 ```
 rbc-genai-adoption-analytics/
-├── src/generate_data.py      users, events, interviews, external trends
-├── src/build_database.py
-├── src/queries.sql           6 enablement questions
-├── src/sql_analysis.py
-├── src/insights.py           weekly readout + PNG charts
-├── src/generate_workbook.py  Excel pack
-├── src/run_all.py
-├── docs/measurement-playbook.md
-├── docs/weekly-readout.md    generated
-└── outputs/                  CSV + xlsx + charts
+├── src/                 pipeline: generate → SQL → readout → dashboard
+├── docs/                playbook, sample readout, experiment memo
+└── outputs/             dashboard HTML, CSV summaries, Excel pack
 ```
+
+## Quick start
 
 ```bash
 cd rbc-genai-adoption-analytics
@@ -47,10 +42,10 @@ python src/run_all.py
 open outputs/adoption_dashboard.html
 ```
 
-Interview prep: `docs/interview-talk-track.md`, `docs/enablement-experiment-memo.md`.
+## Documentation
 
-After clone, run `python src/run_all.py` to regenerate `data/` and full `outputs/` (not all artifacts are in git).
+- [`docs/measurement-playbook.md`](docs/measurement-playbook.md) — metric definitions and weekly cadence
+- [`docs/weekly-readout.md`](docs/weekly-readout.md) — sample readout for product / enablement stakeholders
+- [`docs/enablement-experiment-memo.md`](docs/enablement-experiment-memo.md) — webinar vs huddle A/B on time-to-first-value
 
-## Resume one-liner
-
-Built a synthetic enterprise GenAI adoption warehouse (SQL) tracking license→activate→WAU→time-to-value, wrote a weekly enablement readout that separates session vanity from value events, and documented a repeatable measurement playbook including qualitative barriers and consumer-tool context.
+Regenerate `data/` and full outputs with `python src/run_all.py` after clone.

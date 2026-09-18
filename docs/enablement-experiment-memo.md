@@ -15,4 +15,4 @@ Welch t-test on TTV: t = -2.299, p = 0.0222.
 
 **Default to local-champion huddle at license for lagging BUs.** Webinar scales; huddle buys **activation and faster first value** where BUs are already skeptical (Retail/Insurance interviews). Pair with a one-page “allowed data” card to cut copy-to-external.
 
-Synthetic data (seed 42). Not an RBC experiment.
+Synthetic data (seed 42).
