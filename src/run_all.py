@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 import build_dashboard
+import build_powerbi_dashboard
 import build_database
 import experiment_analysis
 import generate_data
@@ -25,6 +26,7 @@ def main() -> None:
     insights.main()
     generate_workbook.main()
     build_dashboard.main()
+    build_powerbi_dashboard.main()
     print("Done. Open outputs/adoption_dashboard.html for demo.")
 
 
